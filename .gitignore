@@ -48,3 +48,4 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+SwiftUIMovieDb/TMDB-Info.plist

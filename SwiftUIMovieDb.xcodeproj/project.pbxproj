@@ -40,6 +40,7 @@
 		8BF90B66272E44BF001E978D /* DataFetchPhaseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B65272E44BF001E978D /* DataFetchPhaseOverlayView.swift */; };
 		8BF90B68272E47CA001E978D /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B67272E47CA001E978D /* MovieSection.swift */; };
 		8BF90B6A272E4956001E978D /* MovieHomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B69272E4956001E978D /* MovieHomeState.swift */; };
+		E152C6982C2233FC00F58720 /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E152C6972C2233FC00F58720 /* TMDB-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		8BF90B65272E44BF001E978D /* DataFetchPhaseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchPhaseOverlayView.swift; sourceTree = "<group>"; };
 		8BF90B67272E47CA001E978D /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
 		8BF90B69272E4956001E978D /* MovieHomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeState.swift; sourceTree = "<group>"; };
+		E152C6972C2233FC00F58720 /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				8B755F18247936D400FD58C8 /* LaunchScreen.storyboard */,
 				8B755F1B247936D400FD58C8 /* Info.plist */,
 				8B755F15247936D400FD58C8 /* Preview Content */,
+				E152C6972C2233FC00F58720 /* TMDB-Info.plist */,
 			);
 			path = SwiftUIMovieDb;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				8B755F3224793C0B00FD58C8 /* movie_info.json in Resources */,
 				8B755F1A247936D400FD58C8 /* LaunchScreen.storyboard in Resources */,
 				8B755F17247936D400FD58C8 /* Preview Assets.xcassets in Resources */,
+				E152C6982C2233FC00F58720 /* TMDB-Info.plist in Resources */,
 				8B755F14247936D400FD58C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

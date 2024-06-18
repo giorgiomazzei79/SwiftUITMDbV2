@@ -13,7 +13,23 @@ class MovieStore: MovieService {
     static let shared = MovieStore()
     private init() {}
     
-    private let apiKey = "NEWSAPI"
+//    private let apiKey = ProcessInfo.processInfo.environment["TMDB_API_KEY"]
+    
+    private var apiKey: String {
+      get {
+        // 1
+        guard let filePath = Bundle.main.path(forResource: "TMDB-Info", ofType: "plist") else {
+          fatalError("Couldn't find file 'TMDB-Info.plist'.")
+        }
+        // 2
+        let plist = NSDictionary(contentsOfFile: filePath)
+        guard let value = plist?.object(forKey: "API_KEY") as? String else {
+          fatalError("Couldn't find key 'API_KEY' in 'TMDB-Info.plist'.")
+        }
+        return value
+      }
+    }
+
     private let baseAPIURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utils.jsonDecoder
