@@ -18,13 +18,13 @@ class MovieStore: MovieService {
     private var apiKey: String {
       get {
         // 1
-        guard let filePath = Bundle.main.path(forResource: "TMDB-Info", ofType: "plist") else {
-          fatalError("Couldn't find file 'TMDB-Info.plist'.")
+        guard let filePath = Bundle.main.path(forResource: "tmdb", ofType: "plist") else {
+          fatalError("Couldn't find file 'tmdb.plist'.")
         }
         // 2
         let plist = NSDictionary(contentsOfFile: filePath)
         guard let value = plist?.object(forKey: "API_KEY") as? String else {
-          fatalError("Couldn't find key 'API_KEY' in 'TMDB-Info.plist'.")
+          fatalError("Couldn't find key 'API_KEY' in 'tmdb.plist'.")
         }
         return value
       }
